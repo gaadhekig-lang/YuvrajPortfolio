@@ -5,7 +5,7 @@ import { Film, Camera, Edit3, Award } from 'lucide-react';
 const About = () => {
     const stats = [
         { icon: <Film size={24} />, label: 'Projects Completed', value: '50+' },
-        { icon: <Camera size={24} />, label: 'Years Experience', value: '5+' },
+        { icon: <Camera size={24} />, label: 'Years Experience', value: '1+' },
         { icon: <Edit3 size={24} />, label: 'Happy Clients', value: '50+' },
     ];
 
@@ -55,7 +55,7 @@ const About = () => {
                             <span className="text-gray-500">Visual Storyteller</span>
                         </h2>
                         <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-                            I don't just edit videos; I craft experiences. With a passion for narrative and an eye for detail, I transform raw footage into emotional journeys. My work spans across commercials, music videos, documentaries, and social media content.
+                            I'm Yuvraj Agarwal and I'm from Jaipur. I'm not just an editor, I'm a storyteller. My mission is to transform scattered clips into cinematic experiences. My approach combines artistic vision with cutting-edge editing techniques, ensuring each frame serves the narrative and engages the audience.
                         </p>
 
                         <div className="grid grid-cols-2 gap-6 mb-10">
