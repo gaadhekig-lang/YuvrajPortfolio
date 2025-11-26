@@ -1,37 +1,52 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Scissors, Palette, Music, MonitorPlay, Film, Layers } from 'lucide-react';
+import { Scissors, Palette, Music, MonitorPlay, Type, Smartphone, BookOpen, Sparkles, Activity } from 'lucide-react';
 
 const services = [
     {
         icon: <Scissors size={32} />,
-        title: "Video Editing",
-        description: "Professional cutting, pacing, and storytelling to keep your audience engaged from start to finish."
-    },
-    {
-        icon: <Palette size={32} />,
-        title: "Color Grading",
-        description: "Enhancing the mood and look of your footage with cinematic color correction and grading."
-    },
-    {
-        icon: <Music size={32} />,
-        title: "Sound Design",
-        description: "Immersive audio mixing, sound effects, and music selection to elevate the emotional impact."
+        title: "Commercial Editing",
+        description: "High-impact promotional videos and advertisements that drive engagement and conversions for brands"
     },
     {
         icon: <MonitorPlay size={32} />,
         title: "Motion Graphics",
-        description: "Dynamic text animations, titles, and visual effects to add a professional polish."
+        description: "It is a form of animated graphic design that combines text, shapes, and images with motion and audio to create dynamic visuals"
     },
     {
-        icon: <Film size={32} />,
-        title: "Cinematography",
-        description: "Guidance on shot composition and lighting to ensure the best possible raw footage."
+        icon: <Type size={32} />,
+        title: "Typography",
+        description: "It is the art and technique of arranging type to make written language legible, readable, and visually appealing"
     },
     {
-        icon: <Layers size={32} />,
-        title: "VFX Compositing",
-        description: "Seamless integration of visual effects, green screen removal, and object tracking."
+        icon: <Palette size={32} />,
+        title: "Color Grading",
+        description: "Cinematic color correction and custom LUTs to achieve the perfect visual mood"
+    },
+    {
+        icon: <Music size={32} />,
+        title: "Sound Design",
+        description: "It involves a wide range of techniques like recording, editing, mixing, sampling, and creating sound"
+    },
+    {
+        icon: <Smartphone size={32} />,
+        title: "Social Media Content",
+        description: "Short-form content optimized for Instagram, TikTok, YouTube, and other platforms"
+    },
+    {
+        icon: <BookOpen size={32} />,
+        title: "Storytelling",
+        description: "It is the process of using visuals, sound, and pacing to guide a viewer through a narrative, evoking emotion and creating a connection"
+    },
+    {
+        icon: <Sparkles size={32} />,
+        title: "Gen AI",
+        description: "It is a type of artificial intelligence that creates new content, such as text, images, audio, video, and code, by learning patterns from existing data"
+    },
+    {
+        icon: <Activity size={32} />,
+        title: "Video pacing & rhythm",
+        description: "It is the speed at which the narrative or information unfolds, while rhythm refers to the pattern of cuts"
     }
 ];
 

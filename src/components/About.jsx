@@ -3,12 +3,6 @@ import { motion } from 'framer-motion';
 import { Film, Camera, Edit3, Award } from 'lucide-react';
 
 const About = () => {
-    const stats = [
-        { icon: <Film size={24} />, label: 'Projects Completed', value: '50+' },
-        { icon: <Camera size={24} />, label: 'Years Experience', value: '1+' },
-        { icon: <Edit3 size={24} />, label: 'Happy Clients', value: '50+' },
-    ];
-
     return (
         <section id="about" className="py-20 bg-dark relative overflow-hidden">
             {/* Background Elements */}
@@ -57,16 +51,6 @@ const About = () => {
                         <p className="text-gray-400 text-lg mb-8 leading-relaxed">
                             I'm Yuvraj Agarwal and I'm from Jaipur. I'm not just an editor, I'm a storyteller. My mission is to transform scattered clips into cinematic experiences. My approach combines artistic vision with cutting-edge editing techniques, ensuring each frame serves the narrative and engages the audience.
                         </p>
-
-                        <div className="grid grid-cols-2 gap-6 mb-10">
-                            {stats.map((stat, index) => (
-                                <div key={index} className="p-4 bg-white/5 rounded-xl border border-white/10 hover:border-primary/50 transition-colors">
-                                    <div className="text-primary mb-2">{stat.icon}</div>
-                                    <h4 className="text-2xl font-bold text-white mb-1">{stat.value}</h4>
-                                    <p className="text-gray-500 text-sm">{stat.label}</p>
-                                </div>
-                            ))}
-                        </div>
                     </motion.div>
                 </div>
             </div>
