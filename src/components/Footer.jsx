@@ -15,10 +15,7 @@ const Footer = () => {
                     <span>for Creators</span>
                 </div>
 
-                <div className="flex gap-6 text-sm font-medium">
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-                </div>
+
             </div>
         </footer>
     );

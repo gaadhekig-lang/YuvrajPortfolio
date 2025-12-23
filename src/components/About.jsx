@@ -22,9 +22,9 @@ const About = () => {
                         <div className="relative aspect-[3/4] rounded-2xl overflow-hidden group">
                             <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
                             <img
-                                src="/profile-new.jpg"
+                                src="/about-portrait.png"
                                 alt="Profile"
-                                className="w-full h-full object-cover grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:contrast-100 group-hover:brightness-100 transition-all duration-700 transform group-hover:scale-105"
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                             />
 
                             {/* Floating Badge */}
