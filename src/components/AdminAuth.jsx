@@ -87,7 +87,7 @@ const AdminAuth = () => {
                 {/* Info */}
                 <div className="mt-8 p-4 bg-white/5 border border-white/10 rounded-lg">
                     <p className="text-xs text-gray-400 text-center">
-                        Default password: <code className="text-primary">admin123</code>
+                        Default password: <code className="text-primary">Yuvraj@25</code>
                         <br />
                         (Change this in videoStorage.js)
                     </p>

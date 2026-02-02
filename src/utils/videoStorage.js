@@ -86,11 +86,11 @@ export const initializeStorage = () => {
     if (!existing) {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(defaultVideos));
     }
-    
+
     // Set default admin password if not set (you can change this)
     const existingPassword = localStorage.getItem(ADMIN_PASSWORD_KEY);
     if (!existingPassword) {
-        localStorage.setItem(ADMIN_PASSWORD_KEY, 'admin123');
+        localStorage.setItem(ADMIN_PASSWORD_KEY, 'Yuvraj@25');
     }
 };
 
@@ -156,25 +156,25 @@ export const deleteVideo = (id) => {
 // Extract YouTube video ID from various URL formats
 export const extractYouTubeId = (url) => {
     if (!url) return null;
-    
+
     // Regular YouTube watch URLs
     const watchRegex = /(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
     // YouTube Shorts URLs
     const shortsRegex = /youtube\.com\/shorts\/([a-zA-Z0-9_-]{11})/;
     // YouTube Embed URLs
     const embedRegex = /youtube\.com\/embed\/([a-zA-Z0-9_-]{11})/;
-    
+
     let match = url.match(watchRegex) || url.match(shortsRegex) || url.match(embedRegex);
-    
+
     if (match && match[1]) {
         return match[1];
     }
-    
+
     // If it's already just the ID
     if (/^[a-zA-Z0-9_-]{11}$/.test(url)) {
         return url;
     }
-    
+
     return null;
 };
 
@@ -188,7 +188,7 @@ export const generateThumbnailUrl = (videoId, quality = 'maxresdefault') => {
 // Generate YouTube video URL from video ID
 export const generateVideoUrl = (videoId, isShort = false) => {
     if (!videoId) return '';
-    return isShort 
+    return isShort
         ? `https://www.youtube.com/shorts/${videoId}`
         : `https://youtu.be/${videoId}`;
 };
