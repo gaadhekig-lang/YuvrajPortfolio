@@ -1,0 +1,19 @@
+# Netlify configuration for React + Vite app
+
+[build]
+  # Build command
+  command = "npm run build"
+  
+  # Directory that contains the deploy-ready HTML files and assets
+  publish = "dist"
+
+# Redirect rules for client-side routing (React Router)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Environment variables (optional)
+# You can set these in Netlify dashboard instead
+[build.environment]
+  NODE_VERSION = "18"
